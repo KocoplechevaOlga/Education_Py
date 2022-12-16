@@ -5,3 +5,15 @@
 #        - 6 -> да
 #        - 7 -> да
 #        - 1 -> нет
+
+def CheckNumByWeekday(n):
+    if n == 6 or n == 7:
+        print('Выходной')
+    else:
+        print('Будний')
+
+num = int(input('Введите натуральное число:'))
+if  0 < num <8:
+    CheckNumByWeekday(num)
+else:
+    print('Введенное число не соответствует дню недели')
