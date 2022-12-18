@@ -20,7 +20,7 @@ def CreatListBuMiltNum(l, num):
 
 my_List = [1, 2]
 n = int(input('Введите натуральное число:'))
-if n >= 0:
+if n > 0:
     res = CreatListBuMiltNum(my_List, n)
     print(res)
 else:
