@@ -9,4 +9,4 @@ def CreatRandomListByCount(count):
 
 new_list = CreatRandomListByCount(int(input('Введите размер списка:')))
 print(new_list)
-print(f"Ссума элементов, стоящих на нечетных позициях равна: {sum(new_list[::2])}")
+print(f"Сумма элементов, стоящих на нечетных позициях равна: {sum(new_list[::2])}")
