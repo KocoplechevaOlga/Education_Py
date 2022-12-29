@@ -7,3 +7,5 @@
 #           Enter the required accuracy '0.0001': 0.001
 #           out: 8.988
 
+from decimal import *
+print(Decimal(input('Введите число:')).quantize(Decimal(input('Введите порядок округления:'))))
