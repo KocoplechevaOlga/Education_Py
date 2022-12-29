@@ -11,7 +11,7 @@ def Discrim(a, b, c):
             x1 = round((-b + sqrt(d))/(2*a), 4)
             x2 = round((-b - sqrt(d))/(2*a), 4)
             my_File.write(f'Певый корень: {x1},\nВторой корень {x2}\n')
-        elif d ==0:
+        elif d ==0 and a:
             x = round((-b/ (2*a)), 4)
             my_File.write(f'Корень: {x}\n')
         else:
