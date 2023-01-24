@@ -4,3 +4,15 @@
 # Например: in "Иван", "Мария", "Петр", "Илья", "Марина", "Петр", "Алина", "Бибочка"
 # out: {'А': ['Алина'], 'Б': ['Бибочка'], 'И': ['Иван', 'Илья'], 'М': ['Марина', 'Мария'], 'П': ['Петр', 'Петр']}
 
+
+def CreatThesaurFromNameList(*lst):
+    res = {}
+    for i in sorted(lst):
+        letter = i[0]
+        if letter not in res:
+            res[letter] = [i]
+        else:
+            res[letter] +=[i]
+    return res
+
+print(CreatThesaurFromNameList("Иван", "Мария", "Петр", "Илья", "Марина", "Петр", "Алина", "Бибочка"))
