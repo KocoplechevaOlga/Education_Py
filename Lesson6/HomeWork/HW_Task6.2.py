@@ -3,3 +3,13 @@
 #                           160, 168, 180, 189, 200, 210, 220, 231, 240, 252, 260, 273, 280, 
 #                           294, 300, 315, 320, 336, 340, 357, 360, 378, 380, 399, 400, 420]
 
+
+def CreatRangeListByCount(count):
+    my_list = [i for i in range(20, count+1)]
+    return my_list
+
+l = int(input("Введите натуральное число:"))
+if l > 20:
+    my_list = CreatRangeListByCount(l)
+    res_list = [int(i) for i in my_list if i % 20 == 0 or i % 21 == 0]
+    print(res_list)
