@@ -10,5 +10,5 @@ def init(a, b):
     y = b
 
 def sum():
-    x+y
+   return x + y
     
